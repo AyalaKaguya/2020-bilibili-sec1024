@@ -1,6 +1,8 @@
 # 2020-bilibili-sec1024
 
->本记录由 TePuint Club 赞助完成
+> 本记录由 TePuint Club 赞助完成
+
+> 注意：如果你没有达到70分请不要往下查看
 
 活动地址：[sec1024](https://security.bilibili.com/sec1024/)
 
