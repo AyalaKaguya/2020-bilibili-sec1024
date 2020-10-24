@@ -67,7 +67,7 @@ function get(uid) {
 
 >注意：每个人的靶机不一定相同，请注意更换IP
 
-1. 访问 `http://120.92.151.189/blog/test.php`
+1. 访问 `http://120.92.151.189/blog/test.php` （扫目录扫出来的）
 2. 将网页中所有的内容复制粘贴到Console中，获取str1和str2
 ```javascript
  var str1 = "\u7a0b\u5e8f\u5458\u6700\u591a\u7684\u5730\u65b9";
