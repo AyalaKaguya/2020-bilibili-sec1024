@@ -10,25 +10,13 @@
 
 ## 第二题
 
-修改浏览器的User-Agent为 `bilibili Security Browser`，然后刷新网页。
-
-或者在Console中输入：
-
-```javascript
-$.ajax({
-    url: "api/ctf/2",
-    type: "get",
-    success: function (data) {
-        console.log(data.data);
-    }
-})
-```
+修改浏览器的User-Agent为 `bilibili Security Browser`，然后刷新网页，就可以看到flag了。
 
 ## 第三题
 
 就是弱口令，完全靠猜，用户名 `admin` ，密码 `bilibili` 。
 
-或者在Console中输入：
+或者直接在Console中输入：
 
 ```javascript
 $.ajax({
@@ -48,19 +36,7 @@ $.ajax({
 
 ## 第四题
 
-cookies中role对应的值为user的MD5，所以将这个值改为 `Administration` 的MD5，即 `7b7bc2512ee1fedcd76bdc68926d4f7b` ，然后刷新网页即可。
-
-或者在Console中输入：
-
-```javascript
-$.ajax({
-    url: "api/ctf/4",
-    type: "get",
-    success: function (data) {
-        console.log(data.data);
-    }
-})
-```
+cookies中 `role` 对应的值为user的MD5，所以将这个值改为 `Administration` 的MD5，即 `7b7bc2512ee1fedcd76bdc68926d4f7b` ，然后刷新网页，就可以看到flag了。
 
 ## 第五题
 
@@ -128,7 +104,7 @@ function get(uid) {
 ```
 7. 构造URL，使满足 `!is_numeric($_GET['id']) and $reg !== 1 and $str === 1`
 8. 猜URL，访问 "http://120.92.151.189/blog/end.php?id[]=&url=./flag.txt"得到一张图片
-9. 图片另存为，并用npp打开,在文件末尾找到flag
+9. 图片另存为，并用npp或者记事本打开,就可以在文件末尾找到flag
 
 ## 第八题
 
@@ -136,7 +112,7 @@ function get(uid) {
 
 首先安装redis库：`!pip3 install redis`
 
-接着执行以下脚本：
+接着执行以下Python脚本：
 
 ```python
 import redis
