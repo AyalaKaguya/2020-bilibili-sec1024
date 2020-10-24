@@ -6,15 +6,15 @@
 
 活动地址：[sec1024](https://security.bilibili.com/sec1024/)
 
-## 第一题
+## 第一题 - 页面的背后是什么？
 
 打开DevTool审查元素，在`<input>`中找到data
 
-## 第二题
+## 第二题 - 真正的秘密只有特殊的设备才能看到
 
 修改浏览器的User-Agent为 `bilibili Security Browser`，然后刷新网页，就可以看到flag了。
 
-## 第三题
+## 第三题 - 密码是啥？
 
 就是弱口令，完全靠猜，用户名 `admin` ，密码 `bilibili` 。
 
@@ -36,11 +36,11 @@ $.ajax({
 })
 ```
 
-## 第四题
+## 第四题 - 对不起，权限不足～
 
 cookies中 `role` 对应的值为user的MD5，所以将这个值改为 `Administration` 的MD5，即 `7b7bc2512ee1fedcd76bdc68926d4f7b` ，然后刷新网页，就可以看到flag了。
 
-## 第五题
+## 第五题 - 别人的秘密
 
 使用Console向后穷举，我也不知道那个uid哪里来的。
 
@@ -63,7 +63,7 @@ function get(uid) {
 }
 ```
 
-## 第十题
+## 第十题 - 结束亦是开始
 
 你没看错，这里是第十题，但这一题的入口在第六题，也就是第六题做完是第十题的答案。
 
