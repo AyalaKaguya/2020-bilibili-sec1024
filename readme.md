@@ -38,7 +38,7 @@ $.ajax({
 
 ## 第四题 - 对不起，权限不足～
 
-cookies中 `role` 对应的值为user的MD5，所以将这个值改为 `Administration` 的MD5，即 `7b7bc2512ee1fedcd76bdc68926d4f7b` ，然后刷新网页，就可以看到flag了。
+cookies中 `role` 对应的值为user的MD5，所以将这个值改为 `Administrator` 的MD5，即 `7b7bc2512ee1fedcd76bdc68926d4f7b` ，然后刷新网页，就可以看到flag了。
 
 ## 第五题 - 别人的秘密
 
